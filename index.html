@@ -12,7 +12,7 @@
   
   <header class="bg-[#1c2431] flex justify-between items-center p-5 md:p-10">
     <a href="#"><img class="w-20 md:w-40" src="images/logo.svg" alt="Fylo Logo"/></a>
-    <nav>
+    <nav id="nav-header" aria-label="navigation header">
       <ul class="flex gap-x-5 md:gap-x-10 text-sm md:text-base">
         <li><a href="#" class="hover:underline">Features</a></li>
         <li><a href="#" class="hover:underline">Team</a></li>
@@ -39,40 +39,40 @@
     </div>
 
     <div class="pt-32 bg-[#181f2a] space-y-40 md:px-20">
-    <article class="mx-8 sm:mx-20 lg:mx-32 text-center space-y-16 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-40">
-      <section class="relative z-10 flex flex-col gap-y-4 justify-center">
+    <section class="mx-8 sm:mx-20 lg:mx-32 text-center space-y-16 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-40">
+      <div class="relative z-10 flex flex-col gap-y-4 justify-center">
         <img class="w-14 mx-auto" src="images/icon-access-anywhere.svg" alt=""/>
-        <h2 class="font-bold text-lg">Access your files, anywhere</h2>
+        <h1 class="font-bold text-lg">Access your files, anywhere</h1>
         <p class="text-sm font-light">The ability to use a smartphone, tablet, or computer to access your account means your 
           files follow you everywhere.</p>
-      </section>
+        </div>
 
-      <section class="flex flex-col gap-y-4 justify-center">
+      <div class="flex flex-col gap-y-4 justify-center">
         <img class="w-12 mx-auto" src="images/icon-security.svg" alt=""/>
         <h2 class="font-bold text-lg">Security you can trust</h2>
         <p class="text-sm font-light">2-factor authentication and user-controlled encryption are just a couple of the security 
           features we allow to help secure your files.</p>
-      </section>
+        </div>
 
-      <section class="flex flex-col gap-y-4 justify-center">
+      <div class="flex flex-col gap-y-4 justify-center">
         <img class="w-14 mx-auto" src="images/icon-collaboration.svg" alt=""/>
-        <h2 class="font-bold text-lg">Real-time collaboration</h2>
+        <h3 class="font-bold text-lg">Real-time collaboration</h3>
         <p class="text-sm font-light">Securely share files and folders with friends, family and colleagues for live collaboration. 
           No email attachments required.</p>
-      </section>
+        </div>
 
-      <section class="flex flex-col gap-y-4 justify-center">
+      <div class="flex flex-col gap-y-4 justify-center">
         <img class="w-14 mx-auto" src="images/icon-any-file.svg" alt=""/>
-        <h2 class="font-bold text-lg">Store any type of file</h2>
+        <h4 class="font-bold text-lg">Store any type of file</h4>
         <p class="text-sm font-light">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
           file types to be securely stored and shared.</p>
-      </section>
-    </article>
+        </div>
+    </section>
 
     <article class="mx-8 space-y-5 md:grid md:grid-cols-2 md:gap-x-10 md:place-items-center">
       <img src="images/illustration-stay-productive.png" alt="Ilustration"/>
       <div class="space-y-5">
-        <h2 class="font-bold text-lg md:text-3xl">Stay productive, wherever you are</h2>
+        <h1 class="font-bold text-lg md:text-3xl">Stay productive, wherever you are</h1>
         <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
           storage needs.</p>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
@@ -85,10 +85,11 @@
       </div>
     </article>
 
-    <article class="mx-12 space-y-5 md:space-y-0 pb-72 md:grid md:grid-cols-3 md:gap-x-5">
+    <div class="mx-12 space-y-5 md:space-y-0 pb-72 md:grid md:grid-cols-3 md:gap-x-5">
+      
       <div class="md:relative">
         <img class="ml-1 w-5 md:w-16 md:ml-[-.5rem] md:absolute top-[-2.5rem]" src="images/bg-quotes.png" alt="" />
-        <section class="bg-[#202a3c] p-5 rounded space-y-4 md:relative shadow-xl">
+        <div class="bg-[#202a3c] p-5 rounded space-y-4 md:relative shadow-xl">
           <p class="text-sm font-light">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
             become a well-oiled collaboration machine.</p>
           <div class="flex gap-x-3">
@@ -98,10 +99,10 @@
               <p class="font-light text-xs">Founder & CEO, Huddle</p>
             </div>
           </div>
-        </section>
+        </div>
       </div>
 
-      <section class="bg-[#202a3c] p-5 rounded space-y-4 shadow-xl">
+      <div class="bg-[#202a3c] p-5 rounded space-y-4 shadow-xl">
         <p class="text-sm font-light">  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
           become a well-oiled collaboration machine.</p>
         <div class="flex gap-x-3">
@@ -111,9 +112,9 @@
             <p class="font-light text-xs">Founder & CEO, Huddle</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="bg-[#202a3c] p-5 rounded space-y-4 shadow-xl">
+      <div class="bg-[#202a3c] p-5 rounded space-y-4 shadow-xl">
         <p class="text-sm font-light"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
           become a well-oiled collaboration machine.</p>
         <div class="flex gap-x-3">
@@ -123,16 +124,19 @@
             <p class="font-light text-xs">Founder & CEO, Huddle</p>
           </div>
         </div>
-      </section>
-    </article>
+      </div>
+
+    </div>
+
   </div>
+
   </main>
   
 
   <footer class="relative bg-[#0b1523] p-8 space-y-12 pt-48 md:px-20">
     <article class="absolute top-[-15%] lg:top-[-22%] left-0 right-0 mx-auto max-w-xs md:max-w-2xl lg:max-w-3xl">
       <div class=" bg-[#1c2431] shadow-2xl py-8 px-6 md:px-12 rounded-lg space-y-5 md:space-y-7 text-center">
-        <h2 class="font-bold md:text-2xl">Get early access today</h2>
+        <h1 class="font-bold md:text-2xl">Get early access today</h1>
         <p class="font-light text-sm">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
           questions, our support team would be happy to help you.</p>
         <form id="form" name="form" onsubmit="return validForm(event)" required  class="space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-6">
@@ -168,7 +172,7 @@
       </div>
     </section>
 
-    <section class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:col-span-2 lg:col-start-5 lg:gap-x-10">
+    <nav id="nav-fotter" aria-label="navigation fotter" class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:col-span-2 lg:col-start-5 lg:gap-x-10">
       <ul class="flex flex-col gap-y-3">
         <li><a href="#" class="hover:text-[#65e2d9]">About Us</a></li>
         <li><a href="#" class="hover:text-[#65e2d9]">Jobs</a></li>
@@ -180,7 +184,7 @@
         <li><a href="#" class="hover:text-[#65e2d9]">Terms</a></li>
         <li><a href="#" class="hover:text-[#65e2d9]">Privacy</a></li>
       </ul>
-    </section>
+    </nav>
 
     <section class="flex gap-x-3 justify-center pb-4 lg:col-start-7 lg:col-span-2">
       <a href="https://es-la.facebook.com/" target="_blank" aria-label="Go to Facebook"
