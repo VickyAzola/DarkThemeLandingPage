@@ -8,14 +8,14 @@ function validForm(event) {
     let formValidation = document.forms["form"]["email"].value;
     if (formValidation == "" || !form.match(emailFormat)) {
         inputEmail.style.borderColor= "#FF5263"
-        errorMessage.textContent = "Please enter a valid email adress";
+        errorMessage.style.visibility="visible";
         event.preventDefault()
 
         form.addEventListener("click", function () {
-            errorMessage.textContent = "";
+            errorMessage.style.visibility= "hidden";
             inputEmail.style.borderColor = "#717985"
         });
     } else {
-        errorMessage.textContent = "";
+        errorMessage.style.visibility= "hidden";
     }
 }
